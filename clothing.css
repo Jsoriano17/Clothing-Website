@@ -1,0 +1,497 @@
+/************************
+applys to everything
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s ease-in-out;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    display: inline-block;
+    padding: 10px 35px;
+    font-size: 25px;
+    font-family: 'Heebo', sans-serif;
+}
+
+li a:hover {
+    color:  #fcd80d;
+    transition: all 0.2s ease-in-out;
+}
+
+button {
+    background: transparent;
+    border: 1px solid black;
+    font-family: 'Heebo', sans-serif;
+    cursor: pointer;
+}
+
+button:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+h2 {
+    font-family: 'Heebo', sans-serif;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+    }
+    
+    .item {
+        border: 2px solid black;
+        margin: 70px 30px;
+        width: 500px;
+        height: 500px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .item:hover {
+        width: 550px;
+        height: 550px;
+    }
+
+    .item-con {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .vmi {
+        font-size: 50px;
+        border: 2px solid black;
+        padding: 10px 30px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .shake {
+        animation: shake 0.5s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes slidy {
+        0% { left: 0%; }
+        20% { left: 0%; }
+        25% { left: -100%; }
+        45% { left: -100%; }
+        50% { left: -200%; }
+        70% { left: -200%; }
+        75% { left: -300%; }
+        95% { left: -300%; }
+        100% { left: -400%; }
+        }
+        
+/************************
+navigation
+*/
+
+.help {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+}
+
+.top-nav {
+    font-size: 20px;
+    padding: 15px 15px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sml-logo {
+    margin-left: 70px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.search {
+    margin-left: 100px;
+    width: 600px;
+    height: 35px;
+    background: white;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 0 15px;
+}
+
+
+input:focus {
+    outline: none;
+}
+
+input {
+    margin-left: 40px;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    height: 100%;
+    background: transparent;
+  }
+
+  .line {
+      background: black;
+      width: 1px;
+      height: 25px;
+  }
+
+  .mag {
+    position: absolute;
+    right: 70px;
+  }
+
+/************************
+web background
+*/
+
+.web-back {
+    height: 1250px;
+}
+
+.web-head {
+    position: absolute;
+    top: 430px;
+    font-size: 80px;
+    left: 22%;
+    z-index: 2;
+}
+
+.web-head:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.web-back-btn {
+    font-size: 50px;
+    font-weight: bold;
+    padding: 5px 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+div#slider { overflow: hidden; }
+div#slider figure img { width: 20%; float: left; }
+div#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite; 
+}
+
+/************************
+sec 1
+*/
+
+.btn-con {
+    position: absolute;
+    display: flex;
+    flex-direction: column;  
+    left: 39%;
+    top: 1600px;
+}
+
+.sec-1-btn {
+    padding: 15px 50px;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 35px 0px;
+    border: 2px solid black;
+}
+
+.sec-1-btn:hover {
+    color: white;
+}
+
+#mE {
+    display: none;
+}
+
+#wE {
+    display: none;
+}
+/************************
+sec 2
+*/
+
+.sec-two {
+    width: 100%;
+    height: 1700px;
+    position: relative;
+}
+
+.womens-ad {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.ad-wrd {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    left: 200px;
+    top: 150px;
+    font-size: 120px;
+    cursor: pointer;
+}
+
+.ad-wrd:hover {
+    color:  rgb(227, 137, 255);
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+    transition: all 0.2s ease-in-out;
+}
+
+.ad-con {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+.faceless {
+    margin: 50px 100px;
+    width: 550px;
+    height: 800px;
+    cursor: pointer;
+}
+
+.faceless:hover {
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.faceless2 {
+    margin: 50px 100px;
+    width: 550px;
+    height: 800px;
+    cursor: pointer;
+    display: none;
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.faceless2:hover {
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.line2 {
+    width: 130px;
+    height: 2px;
+    display: block;
+    background: black;
+}
+
+.facelessh1 {
+    position: absolute;
+    top: 780px;
+    right: 430px;
+    z-index: 3;
+    color: white;
+    font-size: 35px;
+}
+
+.facelessh2 {
+    position: absolute;
+    top: 780px;
+    left: 410px;
+    z-index: 3;
+    color: white;
+    font-size: 35px;
+}
+
+
+/************************
+sec 3
+*/
+
+.sec-three {
+    width: 100%;
+    height: 1700px;
+    position: relative;
+}
+
+.sec-3-back {
+    opacity: .9;
+}
+
+.ad2 {
+    font-size: 100px;
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    left: 24%;
+    top: 250px;
+    cursor: pointer;
+}
+
+.ad2:hover {
+    color: rgb(255, 223, 42);
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+    transition: all 0.2s ease-in-out;
+}
+
+/************************
+sec 4
+*/
+.sec-four {
+    width: 100%;
+    height: 1700px;
+    position: relative;
+}
+
+
+.ad3 {
+    font-size: 100px;
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    left: 65%;
+    top: 20px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.ad3:hover {
+    color: rgb(51, 243, 169);
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+/************************
+sec 5
+*/
+
+.sec-five {
+    width: 100%;
+    height: 3650px;
+}
+
+.sec-5-con {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+
+.fits {
+    font-size: 80px;
+}
+
+.line3 {
+    width: 250px;
+    height: 2px;
+    background: black;
+    margin: 0 50px;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgs {
+    margin: 20px 50px;
+    cursor: pointer;
+    border: 2px solid black;
+    transition: all 0.2s ease-in-out;
+}
+
+.first {
+    margin-top: 200px;
+    margin-right: 100px;;
+    cursor: pointer;
+    border: 2px solid black;
+    transition: all 0.2s ease-in-out;
+}
+
+.imgs:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.first:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+/************************
+contacts
+*/
+
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    }
+
+.contact2 {
+    font-size: 60px;
+}
+
+.contacts-con {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+}
+
+.icon {
+    margin: 0px 50px;
+    transition: all 0.2s ease-in-out;
+}
+
+.icon:hover {
+    width: 300px;
+    height: 300px;
+}
