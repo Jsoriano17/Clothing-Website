@@ -1,2 +1,2 @@
 # Clothing-Website
-a fake website displaying clothing for purchase made for practice 
+A website made for learning and experience displaying clothing for purchase.
